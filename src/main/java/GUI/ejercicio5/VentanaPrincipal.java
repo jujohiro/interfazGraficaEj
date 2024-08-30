@@ -64,7 +64,6 @@ public class VentanaPrincipal extends JFrame {
 
             @Override
             public void mouseExited(MouseEvent e) {
-                // Cuando el ratón sale de la etiqueta "Ocultar", mostrar las otras etiquetas
                 etiPal1.setVisible(true);
                 etiPal2.setVisible(true);
                 etiPal3.setVisible(true);
@@ -73,17 +72,14 @@ public class VentanaPrincipal extends JFrame {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                // No se usa este evento en este ejercicio
             }
 
             @Override
             public void mousePressed(MouseEvent e) {
-                // No se usa este evento en este ejercicio
             }
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                // No se usa este evento en este ejercicio
             }
         });
     }

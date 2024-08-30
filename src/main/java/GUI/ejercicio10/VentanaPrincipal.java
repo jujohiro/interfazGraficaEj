@@ -22,7 +22,7 @@ public class VentanaPrincipal extends JFrame {
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
-        setLocationRelativeTo(null);  // Centrar la ventana
+        setLocationRelativeTo(null); 
     }
     
     private void iniciarComponentes() {
@@ -31,7 +31,7 @@ public class VentanaPrincipal extends JFrame {
         miPanel.setBounds(0, 0, 400, 300);
         add(miPanel);
         
-        // Cuadros de texto para las palabras
+       
         txtPalabra1 = new JTextField();
         txtPalabra1.setBounds(50, 50, 130, 30);
         miPanel.add(txtPalabra1);
@@ -40,17 +40,17 @@ public class VentanaPrincipal extends JFrame {
         txtPalabra2.setBounds(200, 50, 130, 30);
         miPanel.add(txtPalabra2);
         
-        // Etiqueta para mostrar el texto concatenado
+        
         etiTexto = new JLabel("Resultado:");
         etiTexto.setBounds(50, 120, 280, 30);
         miPanel.add(etiTexto);
         
-        // Botón para concatenar las palabras
+      
         btnConcatena = new JButton("Concatena");
         btnConcatena.setBounds(150, 180, 100, 30);
         miPanel.add(btnConcatena);
         
-        // Añadir el evento de acción al botón "Concatena"
+      
         btnConcatena.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

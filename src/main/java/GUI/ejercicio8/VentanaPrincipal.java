@@ -22,7 +22,7 @@ public class VentanaPrincipal extends JFrame {
         setSize(500, 350);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
-        setLocationRelativeTo(null);  // Centrar la ventana
+        setLocationRelativeTo(null);
     }
     
     private void iniciarComponentes() {
@@ -32,14 +32,12 @@ public class VentanaPrincipal extends JFrame {
         miPanel.setBounds(0, 0, 500, 350);
         add(miPanel);
 
-        // Crear la etiqueta
         etiTexto = new JLabel("Texto de Ejemplo");
         etiTexto.setBounds(150, 30, 200, 30);
-        etiTexto.setOpaque(true);  // Hacer la etiqueta opaca por defecto
+        etiTexto.setOpaque(true);  
         etiTexto.setBackground(Color.WHITE);
         miPanel.add(etiTexto);
         
-        // Crear los botones de color de texto
         btnAzul = new JButton("Azul");
         btnAzul.setBounds(50, 80, 100, 30);
         miPanel.add(btnAzul);
@@ -52,7 +50,7 @@ public class VentanaPrincipal extends JFrame {
         btnVerde.setBounds(270, 80, 100, 30);
         miPanel.add(btnVerde);
 
-        // Crear los botones de color de fondo
+        
         btnFondoAzul = new JButton("Fondo Azul");
         btnFondoAzul.setBounds(50, 120, 120, 30);
         miPanel.add(btnFondoAzul);
@@ -65,7 +63,7 @@ public class VentanaPrincipal extends JFrame {
         btnFondoVerde.setBounds(310, 120, 120, 30);
         miPanel.add(btnFondoVerde);
 
-        // Crear los botones de opacidad
+   
         btnTransparente = new JButton("Transparente");
         btnTransparente.setBounds(50, 160, 150, 30);
         miPanel.add(btnTransparente);
@@ -74,7 +72,7 @@ public class VentanaPrincipal extends JFrame {
         btnOpaca.setBounds(210, 160, 150, 30);
         miPanel.add(btnOpaca);
 
-        // Añadir eventos a los botones de color de texto
+   
         btnAzul.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -96,7 +94,7 @@ public class VentanaPrincipal extends JFrame {
             }
         });
 
-        // Añadir eventos a los botones de color de fondo
+       
         btnFondoAzul.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -118,26 +116,25 @@ public class VentanaPrincipal extends JFrame {
             }
         });
 
-        // Añadir eventos a los botones de opacidad
         btnTransparente.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                etiTexto.setOpaque(false);  // Hacer la etiqueta transparente
-                etiTexto.repaint();  // Refrescar la etiqueta
+                etiTexto.setOpaque(false);  
+                etiTexto.repaint();  
             }
         });
 
         btnOpaca.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                etiTexto.setOpaque(true);  // Hacer la etiqueta opaca
-                etiTexto.repaint();  // Refrescar la etiqueta
+                etiTexto.setOpaque(true);
+                etiTexto.repaint();  
             }
         });
     }
 
     public void setVsible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
     }
 
   

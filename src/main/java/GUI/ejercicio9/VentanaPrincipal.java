@@ -23,7 +23,7 @@ public class VentanaPrincipal extends JFrame {
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
-        setLocationRelativeTo(null);  // Centrar la ventana
+        setLocationRelativeTo(null); 
     }
     
     private void iniciarComponentes() {
@@ -87,8 +87,8 @@ public class VentanaPrincipal extends JFrame {
                 etiResultado.setForeground(Color.RED);
             } else {
                 etiResultado.setText("Resultado: APROBADO");
-                etiNotaFinal.setForeground(Color.BLACK);
-                etiResultado.setForeground(Color.BLACK);
+                etiNotaFinal.setForeground(Color.GREEN);
+                etiResultado.setForeground(Color.GREEN);
             }
         } catch (NumberFormatException ex) {
            

@@ -78,7 +78,6 @@ public class VentanaPrincipal extends JFrame {
         btnAgrandar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Agrandar la etiqueta
                 etiNombre.setSize(sizeEtiquetaGrande);
             }
         });
@@ -90,7 +89,6 @@ public class VentanaPrincipal extends JFrame {
         btnAchicar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Achicar la etiqueta
                 etiNombre.setSize(sizeEtiquetaNormal);
             }
         });
@@ -98,7 +96,6 @@ public class VentanaPrincipal extends JFrame {
         miPanel.add(btnAchicar);
     }
 
-    // Método para agregar los efectos de mouseEntered y mouseExited a los botones
     private void agregarEfectoMouse(JButton boton) {
         boton.addMouseListener(new MouseListener() {
             @Override
@@ -113,17 +110,14 @@ public class VentanaPrincipal extends JFrame {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                // No se usa este evento en este ejercicio
             }
 
             @Override
             public void mousePressed(MouseEvent e) {
-                // No se usa este evento en este ejercicio
             }
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                // No se usa este evento en este ejercicio
             }
         });
     }

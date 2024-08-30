@@ -19,7 +19,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
          
 }
 
-        // Inicialización de los componentes
         private void iniciarComponentes  () {
  etiNombre = new JLabel("Juan Jose Hidalgo");
        
@@ -29,7 +28,6 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
         btnOcultarCiudad = new JButton("Ocultar Ciudad");
         btnVisuCiudad = new JButton("Visualizar Ciudad");
 
-        // Establecer posiciones y tamaños de los componentes
         etiNombre.setBounds(50, 30, 150, 30);
         etiCiudad.setBounds(50, 70, 100, 30);
         btnOcultarNombre.setBounds(200, 30, 150, 30);
@@ -37,15 +35,13 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
         btnOcultarCiudad.setBounds(200, 110, 150, 30);
         btnVisuCiudad.setBounds(200, 150, 150, 30);
 
-        // Añadir los componentes a la ventana
         add(etiNombre);
         add(etiCiudad);
         add(btnOcultarNombre);
         add(btnVisuNombre);
         add(btnOcultarCiudad);
         add(btnVisuCiudad);
-
-        // Añadir ActionListener a los botones
+        
         btnOcultarNombre.addActionListener(this);
         btnVisuNombre.addActionListener(this);
         btnOcultarCiudad.addActionListener(this);
