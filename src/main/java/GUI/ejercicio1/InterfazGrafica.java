@@ -1,5 +1,5 @@
 
-package GUI;
+package GUI.ejercicio1;
 
 public class InterfazGrafica{
 

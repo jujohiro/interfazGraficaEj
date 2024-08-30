@@ -1,5 +1,5 @@
 
-package GUI;
+package GUI.ejercicio1;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
